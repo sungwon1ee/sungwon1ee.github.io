@@ -1,0 +1,11 @@
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--sp-5);
+}
+
+@media (max-width: 480px) {
+  .pgrid {
+    grid-template-columns: 1fr;
+  }
+}

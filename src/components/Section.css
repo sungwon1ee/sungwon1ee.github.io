@@ -1,0 +1,27 @@
+.section {
+  padding-block: var(--sp-9);
+  scroll-margin-top: calc(var(--nav-h) + 24px);
+}
+
+.section__head {
+  max-width: var(--content-narrow);
+  margin-bottom: var(--sp-7);
+}
+
+.section__title {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+}
+
+.section__subtitle {
+  margin-top: var(--sp-3);
+  font-size: var(--fs-body);
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: var(--sp-8);
+  }
+}

@@ -1,0 +1,124 @@
+.cv__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-5);
+}
+
+.cv__block {
+  padding: var(--sp-6);
+  border-radius: var(--r-lg);
+}
+.cv__block--wide {
+  grid-column: 1 / -1;
+}
+.cv__block--compact {
+  padding: var(--sp-5) var(--sp-6);
+}
+
+.cv__blocktitle {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--sp-5);
+}
+.cv__blocktitle--sub {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--text-muted);
+  margin-bottom: var(--sp-4);
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+.timeline__item {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: var(--sp-4);
+}
+.timeline__period {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--accent);
+  padding-top: 2px;
+}
+.timeline__title {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+.timeline__org {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.timeline__detail {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: var(--lh-snug);
+}
+
+/* Awards & Certificates (low-emphasis compact list) */
+.awardlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+.awardlist__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-2);
+  font-size: var(--fs-sm);
+}
+.awardlist__period {
+  min-width: 92px;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+.awardlist__title {
+  font-weight: var(--fw-medium);
+  color: var(--text-muted);
+}
+.awardlist__org {
+  color: var(--text-faint);
+}
+.awardlist__org::before {
+  content: "· ";
+}
+
+/* Skills */
+.cv__skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+.skillgroup__label {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: var(--sp-3);
+}
+.skillgroup__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+@media (max-width: 720px) {
+  .cv__grid {
+    grid-template-columns: 1fr;
+  }
+  .cv__skills {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+}

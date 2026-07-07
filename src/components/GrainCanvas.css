@@ -1,0 +1,9 @@
+.grain-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  pointer-events: none;
+}

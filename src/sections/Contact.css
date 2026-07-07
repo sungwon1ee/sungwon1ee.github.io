@@ -1,0 +1,48 @@
+.contact {
+  padding: var(--sp-8) var(--sp-6);
+  border-radius: var(--r-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.contact__social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow-sm);
+  color: var(--text-muted);
+  transition: color var(--dur), background var(--dur), border-color var(--dur),
+    box-shadow var(--dur);
+}
+.contact__social:hover {
+  color: color-mix(in srgb, var(--brand) 55%, var(--text));
+  background: color-mix(in srgb, var(--brand) 6%, var(--glass-bg-strong));
+  border-color: color-mix(in srgb, var(--brand) 18%, var(--hairline));
+}
+.contact__social svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact__loc {
+  margin-top: var(--sp-5);
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+}

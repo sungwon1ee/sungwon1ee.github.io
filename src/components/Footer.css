@@ -1,0 +1,38 @@
+.footer {
+  padding-block: var(--sp-8) var(--sp-7);
+  border-top: 1px solid var(--hairline);
+  margin-top: var(--sp-8);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.footer__name {
+  font-weight: var(--fw-medium);
+  color: var(--text);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+.footer__links a {
+  color: var(--text-muted);
+  transition: color var(--dur-fast);
+}
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+.footer__note {
+  color: var(--text-faint);
+  font-size: var(--fs-xs);
+}
