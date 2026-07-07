@@ -40,10 +40,10 @@
 /* --- pillars --- */
 .hero__pillars {
   margin-top: var(--sp-6);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-medium);
-  color: var(--text-muted);
-  letter-spacing: 0.01em;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 /* --- description + CTA --- */

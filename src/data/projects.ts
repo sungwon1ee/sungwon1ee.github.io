@@ -63,7 +63,7 @@ export const projects: Project[] = [
     year: "2026",
     status: { ko: "진행 중", en: "Ongoing" },
     role: { ko: "기획 · 3D · 개발", en: "Concept · 3D · Development" },
-    tags: ["Desktop", "3D", "Character"],
+    tags: ["3D", "Interaction", "Native App"],
     cover: "/images/pokopet-cover.png",
     accent: "#3d8fd6",
     gallery: ["/images/pokopet-cover.png", "/images/pokopet-2.png", "/images/pokopet-3.png"],
@@ -114,7 +114,7 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "GitHub", url: "https://github.com/sungwon1ee/Malang-Lab" },
-      { label: "Instagram", url: "https://instagram.com/" },
+      { label: "Instagram", url: "https://www.instagram.com/malang.lab/" },
       { label: "Email", url: "mailto:malang.laboratory@gmail.com" },
     ],
   },

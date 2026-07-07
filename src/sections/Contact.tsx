@@ -4,13 +4,6 @@ import { useLocale } from "../i18n/LocaleContext";
 import { profile } from "../data/profile";
 import "./Contact.css";
 
-/** Each platform's identity color, used only as a subtle hover tint. */
-const BRAND_COLOR: Record<string, string> = {
-  GitHub: "#24292f",
-  Instagram: "#e1306c",
-  LinkedIn: "#0a66c2",
-};
-
 export default function Contact() {
   const { t, tk } = useLocale();
 
@@ -23,20 +16,21 @@ export default function Contact() {
             <a href={`mailto:${profile.email}`} className="btn btn--primary">
               {profile.email}
             </a>
-            {profile.socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.url}
-                target="_blank"
-                rel="noreferrer"
-                className="contact__social"
-                style={{ "--brand": BRAND_COLOR[s.label] } as React.CSSProperties}
-                aria-label={s.label}
-                title={s.label}
-              >
-                <SocialIcon label={s.label} />
-              </a>
-            ))}
+            <div className="contact__icons">
+              {profile.socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact__social"
+                  aria-label={s.label}
+                  title={s.label}
+                >
+                  <SocialIcon label={s.label} />
+                </a>
+              ))}
+            </div>
           </div>
           <span className="contact__loc">{t(profile.location)}</span>
         </GlassCard>

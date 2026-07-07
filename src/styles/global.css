@@ -70,8 +70,8 @@ button {
 }
 
 ::selection {
-  background: var(--accent);
-  color: #fff;
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  color: var(--text);
 }
 
 /* ---------- Reusable primitives ---------- */

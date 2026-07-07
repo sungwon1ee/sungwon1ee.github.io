@@ -33,15 +33,15 @@ export const profile: Profile = {
   },
   pillars: [{ label: "Robotics" }, { label: "Reinforcement Learning" }, { label: "Graphics" }],
   intro: {
-    ko: "살아있는 존재로 느껴지는 것을 만들고자 합니다.\n아이디어를 실제로 손에 잡히는 것으로 바꾸는 과정을 좋아합니다.",
+    ko: "살아있다고 느껴지는 것을 만들고자 합니다.\n아이디어를 실제로 손에 잡히는 것으로 바꾸는 과정을 좋아합니다.",
     en: "I build things that feel alive.\nI love turning ideas into things you can actually hold.",
   },
   avatar: "/images/avatar.jpg",
   location: { ko: "대한민국, 대전", en: "Daejeon, South Korea" },
   email: "sung1lee@kaist.ac.kr",
   socials: [
-    { label: "GitHub", url: "https://github.com/" },
-    { label: "Instagram", url: "https://instagram.com/" },
+    { label: "GitHub", url: "https://github.com/sungwon1ee?tab=repositories" },
+    { label: "Instagram", url: "https://www.instagram.com/malang.lab/" },
     { label: "LinkedIn", url: "https://linkedin.com/" },
   ],
 };
