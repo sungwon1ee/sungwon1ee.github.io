@@ -45,6 +45,9 @@
   color: var(--text);
   letter-spacing: -0.01em;
 }
+.hero__pillar {
+  white-space: nowrap;
+}
 
 /* --- description + CTA --- */
 .hero__desc {
