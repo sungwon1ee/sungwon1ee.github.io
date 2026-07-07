@@ -46,9 +46,9 @@
   gap: var(--sp-2) var(--sp-3);
 }
 .hero__pillar {
-  padding: 8px 20px;
-  border-radius: var(--r-pill);
-  background: var(--chip-bg);
+  padding: 7px 16px;
+  border-radius: var(--r-sm);
+  background: transparent;
   border: 1px solid var(--hairline);
   font-size: var(--fs-body);
   font-weight: var(--fw-semibold);
