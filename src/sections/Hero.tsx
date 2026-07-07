@@ -23,14 +23,13 @@ export default function Hero() {
         </div>
 
         {/* Pillars — the "how": Robotics · RL · Graphics */}
-        <p className="hero__pillars reveal" style={{ animationDelay: "120ms" }}>
-          {profile.pillars.map((p, i) => (
-            <span key={p.label}>
-              <span className="hero__pillar">{p.label}</span>
-              {i < profile.pillars.length - 1 && " · "}
+        <div className="hero__pillars reveal" style={{ animationDelay: "120ms" }}>
+          {profile.pillars.map((p) => (
+            <span key={p.label} className="hero__pillar">
+              {p.label}
             </span>
           ))}
-        </p>
+        </div>
 
         <p className="hero__desc reveal" style={{ animationDelay: "240ms" }}>
           {t(profile.intro)}

@@ -40,12 +40,20 @@
 /* --- pillars --- */
 .hero__pillars {
   margin-top: var(--sp-6);
-  font-size: var(--fs-h2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2) var(--sp-3);
+}
+.hero__pillar {
+  padding: 8px 20px;
+  border-radius: var(--r-pill);
+  background: var(--chip-bg);
+  border: 1px solid var(--hairline);
+  font-size: var(--fs-body);
   font-weight: var(--fw-semibold);
   color: var(--text);
   letter-spacing: -0.01em;
-}
-.hero__pillar {
   white-space: nowrap;
 }
 
