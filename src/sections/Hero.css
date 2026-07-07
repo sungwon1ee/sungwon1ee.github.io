@@ -54,6 +54,13 @@
   white-space: nowrap;
 }
 
+@media (max-width: 640px) {
+  .hero__pillars {
+    flex-direction: column;
+    row-gap: var(--sp-2);
+  }
+}
+
 /* --- description + CTA --- */
 .hero__desc {
   margin-top: var(--sp-7);
