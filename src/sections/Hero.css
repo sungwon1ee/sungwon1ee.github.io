@@ -43,16 +43,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--sp-2) var(--sp-3);
+  column-gap: var(--sp-5);
+  row-gap: var(--sp-1);
 }
 .hero__pillar {
-  padding: 7px 16px;
-  border-radius: var(--r-sm);
-  background: transparent;
-  border: 1px solid var(--hairline);
-  font-size: var(--fs-body);
+  font-size: var(--fs-h3);
   font-weight: var(--fw-semibold);
-  color: var(--text);
+  color: var(--text-muted);
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
