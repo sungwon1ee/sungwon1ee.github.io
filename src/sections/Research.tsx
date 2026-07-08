@@ -7,6 +7,8 @@ import "./Research.css";
 export default function Research() {
   const { t, tk } = useLocale();
 
+  if (research.length === 0) return null;
+
   return (
     <Section id="research" eyebrow={tk("research_eyebrow")} title={tk("research_title")}>
       <div className="rlist">

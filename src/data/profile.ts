@@ -16,7 +16,9 @@ export type Profile = {
   headline: Localized;
   /** The methods behind the work (robotics, RL, graphics …). */
   pillars: Pillar[];
-  /** 1–3 sentence intro shown in the hero. */
+  /** The one-line mission statement, shown big in the hero. */
+  goal: Localized;
+  /** 1–2 sentence supporting line shown under the goal + pillars. */
   intro: Localized;
   /** Path under /public, e.g. "/images/avatar.jpg". */
   avatar: string;
@@ -32,9 +34,13 @@ export const profile: Profile = {
     en: "KAIST School of Computing · Bachelor's",
   },
   pillars: [{ label: "Robotics" }, { label: "Reinforcement Learning" }, { label: "Graphics" }],
+  goal: {
+    ko: "살아있다고 느껴지는 것을 만듭니다",
+    en: "Build things that feel alive",
+  },
   intro: {
-    ko: "살아있다고 느껴지는 것을 만들고자 합니다.\n아이디어를 실제로 손에 잡히는 것으로 바꾸는 과정을 좋아합니다.",
-    en: "I build things that feel alive.\nI love turning ideas into things you can actually hold.",
+    ko: "아이디어를 실체로 바꾸는 과정을 좋아합니다.",
+    en: "I love turning ideas into things you can actually hold.",
   },
   avatar: "/images/avatar.jpg",
   location: { ko: "대한민국, 대전", en: "Daejeon, South Korea" },

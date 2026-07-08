@@ -21,10 +21,18 @@
 }
 
 .nav__brand {
-  font-weight: var(--fw-bold);
-  font-size: 1.05rem;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.nav__brand-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-sm);
+  transition: transform var(--dur-fast);
+}
+.nav__brand:hover .nav__brand-icon {
+  transform: scale(1.06);
 }
 
 .nav__links {

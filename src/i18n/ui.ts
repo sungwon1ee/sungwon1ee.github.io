@@ -9,6 +9,7 @@ export const ui = {
 
   hero_cta_projects: { ko: "프로젝트 보기", en: "View projects" },
   hero_cta_contact: { ko: "연락하기", en: "Get in touch" },
+  hero_pillars_eyebrow: { ko: "관심 분야", en: "Areas of Interest" },
 
   projects_eyebrow: { ko: "작업", en: "Work" },
   projects_title: { ko: "프로젝트", en: "Projects" },

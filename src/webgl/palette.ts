@@ -15,15 +15,15 @@ function hexToVec3(hex: string): Vec3 {
 export const PALETTE_LIGHT: GrainPalette = {
   bg: hexToVec3("#f4f5f7"),
   blobA: hexToVec3("#3d8fd6"),
-  blobB: hexToVec3("#f4e6c8"),
-  blobC: hexToVec3("#a9c9ec"),
+  blobB: hexToVec3("#edd6a0"),
+  blobC: hexToVec3("#8fb8e6"),
 };
 
 export const PALETTE_DARK: GrainPalette = {
   bg: hexToVec3("#0a0a0c"),
   blobA: hexToVec3("#2f6fb0"),
-  blobB: hexToVec3("#4a3f52"),
-  blobC: hexToVec3("#33456f"),
+  blobB: hexToVec3("#5f4f68"),
+  blobC: hexToVec3("#3d5586"),
 };
 
 export function paletteFor(theme: string | null): GrainPalette {

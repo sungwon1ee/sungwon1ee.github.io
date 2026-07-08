@@ -1,6 +1,5 @@
 import { useLocale } from "../i18n/LocaleContext";
 import { profile } from "../data/profile";
-import CoverImage from "../components/CoverImage";
 import "./Hero.css";
 
 export default function Hero() {
@@ -8,34 +7,31 @@ export default function Hero() {
 
   return (
     <header id="top" className="hero">
-      <div className="container hero__inner">
-        <div className="hero__intro reveal">
-          <div className="hero__avatar">
-            <CoverImage
-              src={profile.avatar}
-              alt={t(profile.name)}
-              accent="#5e5ce6"
-              label={t(profile.name).slice(0, 1)}
-            />
-          </div>
+      <div className="container hero__grid">
+        <div className="hero__main reveal">
           <h1 className="hero__name">{t(profile.name)}</h1>
           <p className="hero__headline">{t(profile.headline)}</p>
+
+          <div className="hero__desc">
+            <p>{t(profile.goal)}.</p>
+            <p>{t(profile.intro)}</p>
+          </div>
         </div>
 
-        {/* Pillars — the "how": Robotics · RL · Graphics */}
-        <div className="hero__pillars reveal" style={{ animationDelay: "120ms" }}>
-          {profile.pillars.map((p) => (
-            <span key={p.label} className="hero__pillar">
-              {p.label}
-            </span>
-          ))}
+        {/* Pillars — explicitly framed as the "how" behind the goal above */}
+        <div className="hero__pillars-block reveal" style={{ animationDelay: "140ms" }}>
+          <span className="eyebrow">{tk("hero_pillars_eyebrow")}</span>
+          <ul className="hero__pillars">
+            {profile.pillars.map((p, i) => (
+              <li key={p.label} className="hero__pillar">
+                <span className="hero__pillar-index">{String(i + 1).padStart(2, "0")}</span>
+                <span className="hero__pillar-label">{p.label}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <p className="hero__desc reveal" style={{ animationDelay: "240ms" }}>
-          {t(profile.intro)}
-        </p>
-
-        <div className="hero__cta reveal" style={{ animationDelay: "300ms" }}>
+        <div className="hero__cta reveal" style={{ animationDelay: "260ms" }}>
           <a href="#projects" className="btn btn--primary">
             {tk("hero_cta_projects")}
           </a>

@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useLocale } from "../i18n/LocaleContext";
 import { useTheme } from "../hooks/useTheme";
 import { profile } from "../data/profile";
+import { research } from "../data/research";
 import "./Navbar.css";
 
 const SECTIONS = [
@@ -10,7 +11,7 @@ const SECTIONS = [
   { id: "cv", key: "nav_cv" as const },
   { id: "research", key: "nav_research" as const },
   { id: "contact", key: "nav_contact" as const },
-];
+].filter((s) => s.id !== "research" || research.length > 0);
 
 export default function Navbar() {
   const { locale, setLocale, tk, t } = useLocale();
@@ -33,7 +34,7 @@ export default function Navbar() {
     <div className={`navwrap ${scrolled ? "navwrap--scrolled" : ""}`}>
       <nav className="nav glass glass--strong" aria-label="Primary">
         <Link to="/" className="nav__brand">
-          {t(profile.name)}
+          <img src="/favicon.svg" alt={t(profile.name)} className="nav__brand-icon" />
         </Link>
 
         <div className="nav__links">
